@@ -59,6 +59,6 @@ scale = Vector2( 3, 3 )
 texture = ExtResource( 6 )
 
 [node name="Planet" parent="." instance=ExtResource( 7 )]
-transform = Transform( 30, 0, 0, 0, 30, 0, 0, 0, 30, -24.6372, 135.535, 147.39 )
+transform = Transform( 90, 0, 0, 0, 90, 0, 0, 0, 90, -300.637, 190.535, 190.39 )
 
 [editable path="Imperial"]

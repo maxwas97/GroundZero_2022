@@ -23,6 +23,10 @@ config/icon="res://icon.png"
 Debug="*res://debug/DebugOverlay.tscn"
 AudioManager="*res://audio_manager.gd"
 
+[display]
+
+window/size/fullscreen=true
+
 [global]
 
 input=false
