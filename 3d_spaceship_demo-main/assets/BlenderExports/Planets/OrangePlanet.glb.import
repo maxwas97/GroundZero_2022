@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/OrangePlanet.glb-c454bc5b525d1535763bd0a6d7814a2b.scn"
+path="res://.import/OrangePlanet.glb-dfc40342b9bcb943756fb49ee36bed7b.scn"
 
 [deps]
 
-source_file="res://assets/BlenderExports/OrangePlanet.glb"
-dest_files=[ "res://.import/OrangePlanet.glb-c454bc5b525d1535763bd0a6d7814a2b.scn" ]
+source_file="res://assets/BlenderExports/Planets/OrangePlanet.glb"
+dest_files=[ "res://.import/OrangePlanet.glb-dfc40342b9bcb943756fb49ee36bed7b.scn" ]
 
 [params]
 

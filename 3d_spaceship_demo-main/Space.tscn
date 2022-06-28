@@ -28,7 +28,7 @@ script = ExtResource( 4 )
 [node name="ChaseCamera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.61399, 9.07805 )
 current = true
-far = 500.0
+far = 8192.0
 script = ExtResource( 2 )
 target_path = NodePath("../ExecutionerKB")
 offset = Vector3( 0, 5, 10 )
@@ -38,7 +38,7 @@ environment = SubResource( 2 )
 
 [node name="FixedCamera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.123564, 4.91353, 12.5877 )
-far = 500.0
+far = 8192.0
 
 [node name="Imperial" parent="." instance=ExtResource( 5 )]
 transform = Transform( 12, 0, 0, 0, 12, 0, 0, 0, 12, 307.117, -3.05176e-05, -20.94 )
