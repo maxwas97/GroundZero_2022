@@ -1,4 +1,4 @@
-extends RigidBody
+extends Area
 
 var speed = 150
 
