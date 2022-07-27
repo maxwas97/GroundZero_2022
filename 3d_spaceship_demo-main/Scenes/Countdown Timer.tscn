@@ -1,0 +1,61 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/alien_energy/Alien Energy.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/Countdown.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+font_data = ExtResource( 1 )
+
+[node name="Countdown Timer" type="Node2D"]
+
+[node name="UI" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Countdown" type="Control" parent="UI"]
+margin_left = 310.0
+margin_right = 710.0
+margin_bottom = 40.0
+script = ExtResource( 2 )
+
+[node name="Min" type="RichTextLabel" parent="UI/Countdown"]
+margin_left = 130.0
+margin_top = 14.0
+margin_right = 196.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 50, 40 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "05"
+
+[node name="Sec" type="RichTextLabel" parent="UI/Countdown"]
+margin_left = 183.0
+margin_top = 14.0
+margin_right = 246.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 50, 40 )
+custom_fonts/normal_font = SubResource( 2 )
+text = "00"
+
+[node name="DSec" type="RichTextLabel" parent="UI/Countdown"]
+margin_left = 235.0
+margin_top = 14.0
+margin_right = 466.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 50, 40 )
+custom_fonts/normal_font = SubResource( 3 )
+text = "0"
+
+[node name="Timer" type="Timer" parent="UI/Countdown"]
+wait_time = 0.1
+autostart = true
+
+[connection signal="timeout" from="UI/Countdown/Timer" to="UI/Countdown" method="_on_Timer_timeout"]
