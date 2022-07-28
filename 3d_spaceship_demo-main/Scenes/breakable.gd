@@ -2,6 +2,7 @@ extends Area
 
 
 var planet_hp = 300
+var score = 0
 
 func _ready():
 	pass

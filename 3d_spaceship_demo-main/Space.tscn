@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://ExecutionerKB.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Camera.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/Crosshair2.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/Planet.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/Countdown Timer.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Score.tscn" type="PackedScene" id=9]
 
 [sub_resource type="PanoramaSky" id=1]
 panorama = ExtResource( 3 )
@@ -60,8 +61,10 @@ scale = Vector2( 3, 3 )
 texture = ExtResource( 6 )
 
 [node name="Planet" parent="." instance=ExtResource( 7 )]
-transform = Transform( 90, 0, 0, 0, 90, 0, 0, 0, 90, -300.637, 190.535, 190.39 )
+transform = Transform( 90, 0, 0, 0, 90, 0, 0, 0, 90, -949.384, 190.535, 190.39 )
 
 [node name="Countdown Timer" parent="." instance=ExtResource( 8 )]
+
+[node name="UI" parent="." instance=ExtResource( 9 )]
 
 [editable path="Imperial"]
