@@ -25,7 +25,7 @@ onready var screen_center = Vector2(get_viewport().size.x/2, get_viewport().size
 var max_mouse_movement = 75
  
  
-func _unhandled_input(event):
+func _input(event):
 	if event is InputEventMouseMotion:
 		mouse_movement += event.relative
 		mouse_location = (mouse_movement + screen_center)
