@@ -17,7 +17,7 @@ func _on_Planet_area_entered(area):
 	if area.is_in_group("Laser"):
 		planet_hp -= 20
 		if planet_hp <=0:
-			GameManager.score +=1
+			GameManager.score +=100
 			queue_free()
 			
 
