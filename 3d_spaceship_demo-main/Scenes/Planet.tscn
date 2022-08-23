@@ -32,7 +32,6 @@ transform = Transform( -0.861824, 0, 0.545581, 0, 1.02, 0, -0.545581, 0, -0.8618
 transform = Transform( -0.828359, 0, -0.524396, 0, 0.980392, 0, 0.524396, 0, -0.828359, 0, 0, 0 )
 mesh = SubResource( 1 )
 skeleton = NodePath("../..")
-material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 shape = SubResource( 2 )
