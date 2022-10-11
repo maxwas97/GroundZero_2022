@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://material.tres" type="Material" id=1]
+[ext_resource path="res://assets/BlenderExports/misc/Asteroid.tres" type="ArrayMesh" id=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 1.0
+initial_velocity_random = 0.49
+angular_velocity = 10.28
+angular_velocity_random = 1.0
+linear_accel = -1.0
+angle_random = 1.0
+
+[sub_resource type="QuadMesh" id=2]
+
+[node name="Explosion1" type="Particles"]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -0.00112057, -0.00427759, -0.00190479 )
+material_override = ExtResource( 1 )
+emitting = false
+amount = 20
+lifetime = 2.13
+one_shot = true
+explosiveness = 0.91
+randomness = 0.84
+fixed_fps = 30
+visibility_aabb = AABB( -4, -4, -4.79199, 8, 8, 8 )
+process_material = SubResource( 1 )
+draw_pass_1 = SubResource( 2 )
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+
+[node name="CPUParticles" type="CPUParticles" parent="Spatial"]
+emitting = false
+one_shot = true
+explosiveness = 0.88
+randomness = 0.39
+mesh = ExtResource( 2 )
+emission_shape = 1
+emission_sphere_radius = 1.0
+direction = Vector3( 0, 0, 0 )
+spread = 180.0
+flatness = 0.5
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 4.0
+angular_velocity = 622.7
+angular_velocity_random = 0.74
+tangential_accel = -2.7
+angle = 272.4
+angle_random = 0.36

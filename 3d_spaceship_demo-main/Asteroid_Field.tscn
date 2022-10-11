@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/BlenderExports/misc/Asteroid.tres" type="ArrayMesh" id=1]
+
+[node name="AsteroidField" type="CPUParticles"]
+amount = 1100
+lifetime = 1e+09
+one_shot = true
+explosiveness = 1.0
+mesh = ExtResource( 1 )
+emission_shape = 1
+emission_sphere_radius = 128.0
+direction = Vector3( 0, 0, 0 )
+spread = 0.0
+gravity = Vector3( 0, 0, 0 )
+
+[node name="CPUParticles" type="CPUParticles" parent="."]
+amount = 175
+lifetime = 1e+09
+one_shot = true
+explosiveness = 1.0
+mesh = ExtResource( 1 )
+emission_shape = 1
+emission_sphere_radius = 100.0
+direction = Vector3( 0, 0, 0 )
+gravity = Vector3( 0, 0, 0 )
+
+[node name="CPUParticles2" type="CPUParticles" parent="."]
+amount = 28
+lifetime = 1e+09
+one_shot = true
+explosiveness = 1.0
+mesh = ExtResource( 1 )
+emission_shape = 1
+emission_sphere_radius = 50.0
+direction = Vector3( 0, 0, 0 )
+gravity = Vector3( 0, 0, 0 )
+
+[node name="CPUParticles3" type="CPUParticles" parent="."]
+lifetime = 1e+09
+one_shot = true
+explosiveness = 1.0
+mesh = ExtResource( 1 )
+emission_shape = 1
+emission_sphere_radius = 25.0
+direction = Vector3( 0, 0, 0 )
+gravity = Vector3( 0, 0, 0 )

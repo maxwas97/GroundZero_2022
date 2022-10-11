@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/BlenderExports/misc/Asteroid.tres" type="ArrayMesh" id=1]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="CPUParticles" type="CPUParticles" parent="."]
+explosiveness = 0.88
+randomness = 0.39
+mesh = ExtResource( 1 )
+emission_shape = 1
+emission_sphere_radius = 1.0
+direction = Vector3( 0, 0, 0 )
+spread = 180.0
+flatness = 0.5
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 4.0
+angular_velocity = 622.7
+angular_velocity_random = 0.74
+tangential_accel = -2.7
+angle = 272.4
+angle_random = 0.36
