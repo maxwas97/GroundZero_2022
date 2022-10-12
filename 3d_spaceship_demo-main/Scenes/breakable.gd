@@ -19,7 +19,7 @@ func _on_Planet_area_entered(area):
 		if planet_hp <=0:
 			GameManager.score +=100
 			var new_explode = explosion.instance()
-			get_parent().child(new_explode)
+			get_parent().add_child(new_explode)
 			new_explode.scale = Vector3(150,150,150)
 			new_explode.global_transform.origin = global_transform.origin
 			new_explode.emitting = true
